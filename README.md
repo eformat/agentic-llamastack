@@ -9,7 +9,7 @@ LLamastack agentic demos.
 
 ## Setup
 
-Create project
+Create project.
 
 ```bash
 oc new-proect llama-serve
@@ -21,13 +21,19 @@ Deploy MCP Servers `openshift-mcp`, `github-mcp`
 kustomize build applications/mcp-servers/openshift-mcp | oc apply -n llama-serve -f-
 ```
 
+Give the `openshift-mcp` ServiceAccount the level of access you want 🫨
+
+```bash
+oc adm policy add-cluster-role-to-user cluster-admin -z ocp-mcp -n llama-serve
+```
+
 ```bash
 export GITHUB_TOKEN=ghp_your_github_token
 cat applications/mcp-servers/github-mcp/github-secret.yaml | envsubst | oc apply -f-
 kustomize build applications/mcp-servers/github-mcp | oc apply -n llama-serve -f-
 ```
 
-Deploy LLamaStack. 
+Deploy LLamaStack.
 
 You will need to customize the overlay [applications/llama-stack/overlays/sno/deployment.yaml](applications/llama-stack/overlays/sno/deployment.yaml) to point to your LLM endpoints.
 
