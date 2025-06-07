@@ -20,6 +20,7 @@ spec:
       containers:
       - name: ocp-mcp-server
         image: quay.io/eformat/kubernetes-mcp-server:latest  # quay.io/hveeradh/ocp-mcp-server:latest
+        imagePullPolicy: Always
         ports:
           - name: http
             containerPort: 8000
