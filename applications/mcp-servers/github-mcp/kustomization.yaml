@@ -1,5 +1,5 @@
 ---
 resources:
   - github-deployment.yaml
-  - github-secret.yaml
+#  - github-secret.yaml
   - github-service.yaml

@@ -154,6 +154,10 @@ tool_groups:
   provider_id: model-context-protocol
   mcp_endpoint:
     uri: "http://ocp-mcp-server:8000/sse"
+- toolgroup_id: mcp::github
+  provider_id: model-context-protocol
+  mcp_endpoint:
+    uri: "http://github-mcp-server-with-rh-nodejs:80/sse"
 #- toolgroup_id: mcp::slack
 #  provider_id: model-context-protocol
 #  mcp_endpoint:
