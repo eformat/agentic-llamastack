@@ -1,3 +1,4 @@
+---
 # Once this exists, any pod with the template.metadata.annotation below will send metrics
 # to observability-hub:
 # sidecar.opentelemetry.io/inject: llamastack-otelsidecar
