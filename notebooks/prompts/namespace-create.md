@@ -1,1 +1,2 @@
-Create namespace foo and bar in the cluster.
+namespace=foo
+namespace=bar
