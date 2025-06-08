@@ -1,2 +1,2 @@
-Create namespace=foo in the cluster.
-Create namespace=bar in the cluster.
+{"name": "namespace", "value": "foo"}
+{"name": "namespace", "value": "bar"}
