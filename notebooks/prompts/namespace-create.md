@@ -1,2 +1,4 @@
-name=namespace value=foo
-name=namespace value=bar
+| name      | value |
+|-----------|-------|
+| namespace | foo   |
+| namespace | bar   |
