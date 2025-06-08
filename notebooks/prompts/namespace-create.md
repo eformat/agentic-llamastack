@@ -1,2 +1,2 @@
-{"name": "namespace", "value": "foo"}
-{"name": "namespace", "value": "bar"}
+namespace foo
+namespace bar
