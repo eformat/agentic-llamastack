@@ -1,2 +1,2 @@
-namespace foo
-namespace bar
+namespace=foo
+namespace=bar
