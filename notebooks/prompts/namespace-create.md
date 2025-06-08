@@ -1,4 +1,4 @@
-| name      | value |
-|-----------|-------|
-| namespace | foo   |
-| namespace | bar   |
+| namespace |
+|-----------|
+| foo       |
+| bar       |

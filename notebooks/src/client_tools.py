@@ -1,5 +1,6 @@
 from llama_stack_client.lib.agents.client_tool import client_tool
 import geocoder
+import base64
 
 @client_tool
 def torchtune(query: str = "torchtune"):
@@ -38,3 +39,19 @@ def get_location(query: str = "location"):
             return "Unable to determine your location"
     except Exception as e:
         return f"Error getting location: {str(e)}"
+
+@client_tool
+def decode_content(query: str = "content"):
+    """
+    Decode base64 content.
+
+    :param content: The base64 content to decode
+    :returns: The decoded content
+    """
+    try:
+        # Try to decode as base64 first
+        decoded = base64.b64decode(content).decode('utf-8')
+        return decoded
+    except Exception:
+        # If decoding fails, return original content
+        return content
