@@ -1,2 +1,2 @@
-Create namespace foo
-Create namespace bar
+name=namespace value=foo
+name=namespace value=bar
