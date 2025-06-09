@@ -1,4 +1,4 @@
 | namespace |
 |-----------|
-| saturn    |
-| neptune   |
+| bar       |
+| foo       |
