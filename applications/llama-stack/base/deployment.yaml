@@ -49,9 +49,9 @@ spec:
             - name: QWEN_MODEL
               value: /mnt/models/Qwen3-1.7B-Q8_0.gguf
             - name: DEEPSEEK_URL
-              value: 'https://sno-deepseek-qwen3-cpp-predictor-llama-serving.apps.sno.sandbox2556.opentlc.com/v1'
+              value: 'https://sno-deepseek-qwen3-vllm-predictor-llama-serving.apps.sno.sandbox2556.opentlc.com/v1'
             - name: DEEPSEEK_MODEL
-              value: /mnt/models/DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf
+              value: deepseek-r1-0528-qwen3-8b-bnb-4bit
             - name: VLLM_API_TOKEN
               value: fake
             - name: CUSTOM_TIKTOKEN_CACHE_DIR
