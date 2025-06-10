@@ -49,6 +49,17 @@ Also check [applications/llama-stack/base/run.yaml](applications/llama-stack/bas
 kustomize build applications/llama-stack/overlays/sno | oc apply -n llama-serve -f-
 ```
 
+## StreamLit
+
+Use the streamlit chat interface to interact with the LLamaStack playground.
+
+```bash
+-- streamlit-client
+export TAVILY_SEARCH_API_KEY="tvly-dev-your-api-key"
+cat applications/streamlit-client/tavily_secret.yaml | envsubst | oc -n llama-serve apply -f-
+kustomize build /home/mike/git/agentic-llamastack/applications/streamlit-client | oc apply -n llama-serve -f-
+```
+
 ## Notebooks
 
 To run the notebooks.
