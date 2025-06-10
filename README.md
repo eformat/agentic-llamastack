@@ -15,7 +15,7 @@ Create project.
 oc new-proect llama-serve
 ```
 
-Deploy MCP Servers `openshift-mcp`, `github-mcp`
+Deploy MCP Servers `openshift-mcp`, `github-mcp`, `fast-mcp-tools`
 
 ```bash
 kustomize build applications/mcp-servers/openshift-mcp | oc apply -n llama-serve -f-
@@ -31,6 +31,12 @@ oc adm policy add-cluster-role-to-user cluster-admin -z ocp-mcp -n llama-serve
 export GITHUB_TOKEN=ghp_your_github_token
 cat applications/mcp-servers/github-mcp/github-secret.yaml | envsubst | oc apply -f-
 kustomize build applications/mcp-servers/github-mcp | oc apply -n llama-serve -f-
+```
+
+[Fast MCP Tools](https://github.com/eformat/fast-mcp-tools)
+
+```bash
+kustomize build applications/mcp-servers/fast-mcp-tools | oc apply -n llama-serve -f-
 ```
 
 Deploy LLamaStack.
